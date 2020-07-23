@@ -1,9 +1,5 @@
 from application import app
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5001, host='0.0.0.0', debug=True)
