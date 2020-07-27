@@ -1,0 +1,14 @@
+# ignore Markdown files
+*.md
+
+# ignore Dockerignore file
+.dockerignore
+
+# ignore virtual environment
+venv
+
+# ignore gitignore file
+.gitignore
+
+# ignore hidden git folder
+.git
