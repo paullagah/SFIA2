@@ -5,7 +5,6 @@ docker stack deploy --compose-file docker-compose.yaml DnDservice
 fi
 
 if [[ "$(docker stack ls 2> /dev/null)" == "DnDservice" ]]; then
-docker-compose push 
 docker pull -q paullagah/service_1:latest
 docker pull -q paullagah/service_2:latest
 docker pull -q paullagah/service_3:latest
