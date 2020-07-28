@@ -4,14 +4,20 @@ pipeline {
 
     stages {
 
+        stage('New Image') {
+
+                steps {
+                    sh 'chmod +x ./scripts/*.sh'
+                    sh './scripts/newimagebuild.sh'
+                }
+        }
+
         stage('Build Images') {
 
                 steps {
-
-                    sh 'chmod +x ./scripts/*.sh'
+ 
                     sh './scripts/build_images.sh'
                     
-
                 }
             
         }
