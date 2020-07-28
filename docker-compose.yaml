@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
     service_1:
-        build: ./Service_1
+        # build: ./Service_1
         # container_name: service_1
         image: paullagah/service_1
         ports:
@@ -16,35 +16,35 @@ services:
             - service_4
             - service_2
             - service_3
-        # deploy:
-        #     replicas: 2
+        deploy:
+            replicas: 2
 
     service_2:
-        build: ./Service_2
+        # build: ./Service_2
         # container_name: service_2
         image: paullagah/service_2
         networks:
             - sfia2_network
-        # deploy:
-        #     replicas: 2
+        deploy:
+            replicas: 2
 
     service_3:
-        build: ./Service_3
+        # build: ./Service_3
         # container_name: service_3
         image: paullagah/service_3
         networks:
             - sfia2_network
-        # deploy:
-        #     replicas: 2
+        deploy:
+            replicas: 2
 
     service_4:
-        build: ./Service_4
+        # build: ./Service_4
         # container_name: service_4
         image: paullagah/service_4
         networks:
             - sfia2_network
-        # deploy:
-        #     replicas: 2
+        deploy:
+            replicas: 2
 
 networks:
     
