@@ -14,8 +14,16 @@
     <button onclick="window.location.reload();">
         Generate
     </button>
-
-
+    {% for dnd in dnd %}
+        <div class="content">
+        <tr>
+            <td>{{ dnd.id }}</td>
+            <td>{{ dnd.races }}</td>
+            <td>{{ dnd.classes }}</td>
+            
+        </tr>
+        </div>
+    {% endfor %}
 
 </body>
 
