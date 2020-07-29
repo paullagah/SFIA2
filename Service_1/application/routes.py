@@ -4,6 +4,18 @@ from flask_sqlalchemy import SQLAlchemy
 import requests
 import random
 
+app.config['SECRET_KEY'] = '919c92fab903330df5b2f66c22d3b22b'  # environ.get('SECRET_KEY')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://' + \
+                                        environ.get('MYSQL_USER') + \
+                                        ':' + \
+                                        environ.get('MYSQL_PASSWORD') + \
+                                        '@' + \
+                                        environ.get('MYSQL_HOST') + \
+                                        ':' + \
+                                        environ.get('MYSQL_PORT') + \
+                                        '/' + \
+                                        environ.get('MYSQL_DB_NAME')
 
 db = SQLAlchemy(app)
 
