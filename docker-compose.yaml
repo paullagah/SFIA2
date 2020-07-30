@@ -9,11 +9,11 @@ services:
         networks:
             - sfia2_network
         environment:
-            - SQLHOST=${MYSQL_HOST}
-            - PASSWORD=${MYSQL_PASSWORD}
-            - PORT=${MYSQL_PORT}
-            - USER=${MYSQL_USER}
-            - DBNAME=${MYSQL_DB_NAME}
+            - SQLHOST: ${MYSQL_HOST}
+            - PASSWORD: ${MYSQL_PASSWORD}
+            - PORT: ${MYSQL_PORT}
+            - USER: ${MYSQL_USER}
+            - DBNAME: ${MYSQL_DB_NAME}
         depends_on:
             - service_4
             - service_2
