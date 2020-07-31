@@ -30,7 +30,7 @@ class dnd(db.Model):
         [
             'Race: ' + self.races + '\n' 
             'Classes ' + self.classes + '\n'
-            'ID: ' + self.id
+            'ID: ' + str(self.id)
         ]
     )
 
@@ -39,5 +39,6 @@ class dnd(db.Model):
 def home():
     response = requests.get('http://service_4:5003/merge')
     print(response)
+    sentence = response.text
     dnd_data = dnd.query.all()
-    return render_template('index.html', sentence=response, dnd_data=dnd_data, title='Home')
+    return render_template('index.html', sentence=sentence, dnd=dnd_data, title='Home')
