@@ -38,10 +38,10 @@ class dnd(db.Model):
 def merge():
     race = requests.get('http://service_2:5001/race')
     dndclass = requests.get('http://service_3:5002/dndclasses')
-    response = "Your race is " + race.text + " and your class is " + dndclass.text
+    response = "Your race is " + str(race.text) + " and your class is " + str(dndclass.text)
     dnd_data = dnd(
-            races=race,
-            classes=dndclass
+            races=str(race),
+            classes=str(dndclass)
         )
     db.session.add(dnd_data)
     db.session.commit()
