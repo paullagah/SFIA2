@@ -14,16 +14,19 @@
     <button onclick="window.location.reload();">
         Generate
     </button>
-    {% for dnd in dnd %}
+    <br>
+    <br>
+    <table>
+    {% for dnd in dnd_data %}
         <div class="content">
         <tr>
             <td>{{ dnd.id }}</td>
             <td>{{ dnd.races }}</td>
             <td>{{ dnd.classes }}</td>
-            
         </tr>
         </div>
     {% endfor %}
+    </table>
 
 </body>
 
