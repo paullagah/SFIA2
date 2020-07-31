@@ -36,9 +36,9 @@ class dnd(db.Model):
 
 @app.route('/merge', methods=['GET', 'POST'])
 def merge():
-    race = requests.get('http://service_2:5001/race')
-    dndclass = requests.get('http://service_3:5002/dndclasses')
-    response = "Your race is " + str(race.text) + " and your class is " + str(dndclass.text)
+    race = requests.get('http://service_2:5001/race').text
+    dndclass = requests.get('http://service_3:5002/dndclasses').text
+    response = "Your race is " + str(race) + " and your class is " + str(dndclass)
     dnd_data = dnd(
             races=str(race),
             classes=str(dndclass)
