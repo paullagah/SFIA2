@@ -5,7 +5,7 @@ WORKDIR /etc/nginx/
 RUN apt update -y
 RUN apt install open ssl -y
 
-RUN rm ./conf.d/default.conf
+RUN rm ./sites-available/default
 
-COPY ./reverse_proxy.conf ./conf.d/
+COPY ~/SFIA2/NGINX/reverse_proxy.conf ./sites-available/
 
