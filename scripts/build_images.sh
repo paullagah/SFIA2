@@ -21,3 +21,5 @@ docker push paullagah/service_4:latest
 docker build --no-cache -t paullagah/nginx ./NGINX
 docker push paullagah/nginx:latest
 echo $(docker images)
+
+# Check issues again
