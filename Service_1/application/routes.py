@@ -37,7 +37,7 @@ class dnd(db.Model):
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    response = requests.get('http://service_4:5003/merge')
+    response = requests.get('http://localhost:5003/merge')
     print(response)
     sentence = response.text
     dnd_data = dnd.query.all()
