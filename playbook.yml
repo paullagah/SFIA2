@@ -5,6 +5,8 @@
   roles: 
     - docker-installation
 
+
+# Add jenkins user to 'sudo' group
 - name: Install Docker-CE on Manager
   hosts: localhost
   connection: local
