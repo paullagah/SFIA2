@@ -3,7 +3,15 @@ pipeline {
     agent any
 
     stages {
+        
+        stage('Run Playbook') {
 
+                steps {
+
+                    sh './scripts/ansible.sh'
+                }
+        }
+        
         stage('Build Images') {
 
                 steps {
@@ -15,23 +23,17 @@ pipeline {
             
         }
 
-        stage('Start Swarm') {
+        // stage('Start Swarm') {
 
-                steps {
+        //         steps {
 
-                    sh './scripts/swarm_setup.sh'
+        //             sh './scripts/swarm_setup.sh'
                 
-                }
+        //         }
 
-        }
+        // }
 
-        stage('Run Playbook') {
-
-                steps {
-
-                    sh './scripts/ansible.sh'
-                }
-        }
+        
 
         stage('Deploy Stack') {
 
