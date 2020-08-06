@@ -15,14 +15,6 @@ pipeline {
             
         }
 
-        stage('Run Playbook') {
-
-                steps {
-
-                    sh './scripts/ansible.sh'
-                }
-        }
-
         stage('Start Swarm') {
 
                 steps {
@@ -31,6 +23,14 @@ pipeline {
                 
                 }
 
+        }
+
+        stage('Run Playbook') {
+
+                steps {
+
+                    sh './scripts/ansible.sh'
+                }
         }
 
         stage('Deploy Stack') {
