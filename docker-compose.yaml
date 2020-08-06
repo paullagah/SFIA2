@@ -4,8 +4,6 @@ services:
 
     service_1:
         image: paullagah/service_1
-        # ports:
-        #     - "5000:5000"
         networks:
             - sfia2_network
         environment:
