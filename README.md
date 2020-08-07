@@ -34,11 +34,17 @@ Service 1 runs as the front end, displaying the output from Service 4. Service 4
 ![App](https://github.com/paullagah/DevOps/blob/master/App%20Overview.JPG)
 
 
+Below is an image of the Timeline showing the use of the Feature Branch model
+
+![FeatureBranch](https://github.com/paullagah/DevOps/blob/master/Feature-Branch%20Timeline.png)
+
 ## Trello Board
 
 Trello Board is what was used to keep a track of my progress on the project and log errors.
 
 ![Trello](https://github.com/paullagah/DevOps/blob/master/SFIA2-Trello.JPG)
+
+
 
 ## Risk Assessment
 
@@ -94,6 +100,12 @@ Finally, Jenkins will deploy the application from the swarm manager machine usin
 If there is any failures in the pipeline jobs then it will be displayed as the following.
 
 ![FailedStage](https://github.com/paullagah/DevOps/blob/master/SFIA2-Pipeline-stage-fail.png)
+
+## Retrospective
+As each Sprint continued and more work was carried out, things that could have been done better were:
+- Spending more time learning technologies
+- Implement more seamless configuration management installations
+- Further code testing could be implemented to ensure code works exactly as required
 
 ## Improvements
 
