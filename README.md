@@ -44,7 +44,13 @@ Trello Board is what was used to keep a track of my progress on the project and 
 
 ![Trello](https://github.com/paullagah/DevOps/blob/master/SFIA2-Trello.JPG)
 
+In the Below Trello Board you can see the progress as the Sprints were completed and where there may be work carried onto the next Sprint. 
 
+Errors logged that have not yet been moved over to the "Completed" section, are those that were not able to be completed.
+
+Errors that have been Resolved have Solutions in the comments for the Build Number.
+
+![FinalTrello](https://github.com/paullagah/DevOps/blob/master/SFIA2-TrelloFinal.JPG.png)
 
 ## Risk Assessment
 
