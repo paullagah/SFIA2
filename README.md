@@ -56,6 +56,7 @@ Below you will see the risk assessment carried out for this project:
 
 ### ___Database___
 
+![Database](https://github.com/paullagah/DevOps/blob/master/SFIA2-Database.JPG)
 
 ### ___App Design___
 
