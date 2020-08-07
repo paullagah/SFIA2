@@ -50,6 +50,8 @@ Errors logged that have not yet been moved over to the "Completed" section, are 
 
 Errors that have been Resolved have Solutions in the comments for the Build Number.
 
+Logs that have been put into the "Aborted" Section have comments next to them detailing the reasons for being logged.
+
 ![FinalTrello](https://github.com/paullagah/DevOps/blob/master/SFIA2-TrelloFinal.JPG.png)
 
 ## Risk Assessment
