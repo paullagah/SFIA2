@@ -21,19 +21,7 @@ pipeline {
                     
                 }
             
-        }
-
-        // stage('Start Swarm') {
-
-        //         steps {
-
-        //             sh './scripts/swarm_setup.sh'
-                
-        //         }
-
-        // }
-
-        
+        }     
 
         stage('Deploy Stack') {
 

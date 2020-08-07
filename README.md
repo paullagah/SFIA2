@@ -8,9 +8,11 @@
 2. Trello Board
 3. Risk Assessment
 4. Project Design
+   - CI Pipeline
+   - Database
+   - App Design 
 5. Deployment
 6. Improvement
-7. Installation & Setup Guide
 
 ## Project Brief
 ### ___Requirements___
@@ -25,4 +27,46 @@ The requirements of the project are as follows:
 - The project must make use of a reverse proxy to make your application accessible to the user.
 
 ### ___Overview___
+This app is a DnD Race/Class Generator.
+
+Service 1 runs as the front end, displaying the output from Service 4. Service 4 gets a randomly generated race from Service 2, and a randomly generated classes from Service 3, then concatenates them in Service 4 before Service 1 gets them and displays them on the front end app.
+
+![App](https://github.com/paullagah/DevOps/blob/master/App%20Overview.JPG)
+
+
+## Trello Board
+
+Trello Board is what was used to keep a track of my progress on the project and log errors.
+
+![Trello](https://github.com/paullagah/DevOps/blob/master/SFIA2-Trello.JPG)
+
+## Risk Assessment
+
+Below you will see the risk assessment carried out for this project:
+
+![Risk_Assessment](https://github.com/paullagah/DevOps/blob/master/SFIA2%20-%20Risk%20Assessment.JPG)
+
+
+## Project Design
+### ___CI Pipeline___
+
+![CIPipelineOld](https://github.com/paullagah/DevOps/blob/master/CI%20Pipeline-old.jpg)
+
+![CIPipeline](https://github.com/paullagah/DevOps/blob/master/CI%20Pipeline.jpg)
+
+### ___Database___
+
+![Database](https://github.com/paullagah/DevOps/blob/master/SFIA2-Database.JPG)
+
+### ___App Design___
+
+![AppInitialDesign](https://github.com/paullagah/DevOps/blob/master/SFIA2-App-first.JPG)
+
+![AppFinalDesign](https://github.com/paullagah/DevOps/blob/master/SFIA2-App.JPG)
+
+
+## Deployment
+
+
+## Improvement
 
