@@ -50,7 +50,11 @@ Below you will see the risk assessment carried out for this project:
 ## Project Design
 ### ___CI Pipeline___
 
+The Initial CI Pipeline design was made with fewer technologies in mind:
+
 ![CIPipelineOld](https://github.com/paullagah/DevOps/blob/master/CI%20Pipeline-old.jpg)
+
+The Final CI Pipeline design completed with additional Docker Swarm set up with 
 
 ![CIPipeline](https://github.com/paullagah/DevOps/blob/master/CI%20Pipeline.jpg)
 
@@ -60,7 +64,11 @@ Below you will see the risk assessment carried out for this project:
 
 ### ___App Design___
 
+The first image below shows the design made initially for the Race/Class Generator:
+
 ![AppInitialDesign](https://github.com/paullagah/DevOps/blob/master/SFIA2-App-first.JPG)
+
+This next design implements the persisted data from previously generated Races/Classes:
 
 ![AppFinalDesign](https://github.com/paullagah/DevOps/blob/master/SFIA2-App.JPG)
 
