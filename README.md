@@ -44,6 +44,8 @@ Trello Board is what was used to keep a track of my progress on the project and 
 
 ![Trello](https://github.com/paullagah/DevOps/blob/master/SFIA2-Trello.JPG)
 
+
+
 ## Risk Assessment
 
 Below you will see the risk assessment carried out for this project:
