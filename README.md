@@ -54,11 +54,13 @@ The Initial CI Pipeline design was made with fewer technologies in mind:
 
 ![CIPipelineOld](https://github.com/paullagah/DevOps/blob/master/CI%20Pipeline-old.jpg)
 
-The Final CI Pipeline design completed with additional Docker Swarm set up with 
+
+The Final CI Pipeline design completed with additional Docker Swarm set up with Ansible configuration added to manage it.
 
 ![CIPipeline](https://github.com/paullagah/DevOps/blob/master/CI%20Pipeline.jpg)
 
 ### ___Database___
+A relatively simple table was designed for persisting data - the structure can be seen in the image below.
 
 ![Database](https://github.com/paullagah/DevOps/blob/master/SFIA2-Database.JPG)
 
@@ -74,7 +76,30 @@ This next design implements the persisted data from previously generated Races/C
 
 
 ## Deployment
+The deployment of the app is automated and handled different tools such as Jenkins, Ansible and Docker. After committing any changes to my GitHub, Jenkins will trigger a pipeline job via a webhook set up through GitHub & Jenkins Configuration. The different stages of the pipeline are outlined in my Jenkinsfile, which for mine currently are: 
+- Run Playbook 
+- Build Images 
+- Deploy Stack 
+- Clean 
+ 
+In order to improve readability, each step refers to a script which handles a different stage of the pipeline. First, Jenkins will checkout the Github repo then it will initiate the Jenkinsfile stages.
+
+Here, Jenkins will configure my machines with the use of Ansible. My Ansible playbook specifies different roles which allow me to install different requirements depending on what each machine will be responsible for. For every machine, Ansible will install Docker. It will then configure my swarm - creating a swarm on my swarm manager, and joining that swarm on my worker machine.
+
+Finally, Jenkins will deploy the application from the swarm manager machine using docker stack. This will balance the load of the containers across the two machines, just before performing clean-up exercises on the Manager node.
+
+![PipelineStage](https://github.com/paullagah/DevOps/blob/master/SFIA-Pipeline-stage.png)
 
 
-## Improvement
+If there is any failures in the pipeline jobs then it will be displayed as the following.
 
+![FailedStage](https://github.com/paullagah/DevOps/blob/master/SFIA2-Pipeline-stage-fail.png)
+
+## Improvements
+
+There could be some improvements made to the project, as stated below:
+- Add a logo
+- Implement a more graphical design
+- Produce stats for character upon creation
+- Suggest Name to be made for character, or apply an option of 3 different names
+- Set up Search Functionality for their Character ID
