@@ -33,7 +33,4 @@
     name: "manager_hostname"
     value: "{{ manager_hostname.stdout }}"
 
-# - name: Add worker to manager node
-#   shell: echo {{ hostvars['token']['value'] }}
-#   state: join 
 
