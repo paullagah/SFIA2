@@ -3,7 +3,6 @@
   apt: 
     name: ['apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common']
     state: latest
-    # update_cache: yes
   tags: docker
 
 - name: Get docker GPG key
@@ -22,7 +21,6 @@
   apt:
     name: docker-ce
     state: latest
-    # update_cache: yes
   tags: docker
 
 - name: Start docker
