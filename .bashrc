@@ -3,3 +3,4 @@ export MYSQL_HOST=34.89.70.201
 export MYSQL_PASSWORD=Monkey10
 export MYSQL_PORT=3306
 export MYSQL_USER=root
+export SECRET_KEY=919c92fab903330df5b2f66c22d3b22b

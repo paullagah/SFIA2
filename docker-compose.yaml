@@ -12,6 +12,7 @@ services:
             - MYSQL_PORT=${MYSQL_PORT}
             - MYSQL_USER=${MYSQL_USER}
             - MYSQL_DB_NAME=${MYSQL_DB_NAME}
+            - SECRET_KEY=${SECRET_KEY}
         depends_on:
             - service_4
             - service_2
@@ -43,6 +44,7 @@ services:
             - MYSQL_PORT=${MYSQL_PORT}
             - MYSQL_USER=${MYSQL_USER}
             - MYSQL_DB_NAME=${MYSQL_DB_NAME}
+            - SECRET_KEY=${SECRET_KEY}
         deploy:
             replicas: 3
     
