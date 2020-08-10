@@ -124,3 +124,7 @@ There could be some improvements made to the project, as stated below:
 - Produce stats for character upon creation
 - Suggest Name to be made for character, or apply an option of 3 different names
 - Set up Search Functionality for their Character ID
+
+
+Trello - https://trello.com/b/gAL9MkC9/dd-random-generator
+Github - https://github.com/paullagah/SFIA2
