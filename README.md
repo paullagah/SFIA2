@@ -12,7 +12,8 @@
    - Database
    - App Design 
 5. Deployment
-6. Improvement
+6. Retrospective
+7. Improvement
 
 ## Project Brief
 ### ___Requirements___
