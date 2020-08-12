@@ -1,4 +1,4 @@
 #!/bin/bash
-source /var/lib/jenkins/.bashsrc
+source /var/lib/jenkins/.bashrc
 docker stack deploy --compose-file docker-compose.yaml DnDservice
 
